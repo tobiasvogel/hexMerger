@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="appicon.png">resources/appicon.png</file>
+        <file alias="clearicon.png">resources/clearicon.png</file>
+        <file alias="erroricon.png">resources/erroricon.png</file>
+        <file alias="okicon.png">resources/okicon.png</file>
+        <file alias="openicon.png">resources/openicon.png</file>
+        <file alias="quiticon.png">resources/quiticon.png</file>
+        <file alias="runicon.png">resources/runicon.png</file>
+        <file alias="saveicon.png">resources/saveicon.png</file>
+        <file alias="settingsicon.png">resources/settingsicon.png</file>
+        <file alias="infoicon.png">resources/infoicon.png</file>
+        <file alias="closeicon.png">resources/closeicon.png</file>
+        <file alias="licenseicon.png">resources/licenseicon.png</file>
+        <file alias="gplv2.txt">resources/gplv2.txt</file>
+        <file alias="dontaskicon.png">resources/donotaskicon.png</file>
+        <file alias="linuxicon.png">resources/linuxicon.png</file>
+        <file alias="macicon.png">resources/macicon.png</file>
+        <file alias="winicon.png">resources/winicon.png</file>
+        <file alias="ideaicon.png">resources/ideaicon.png</file>
+        <file alias="noideaicon.png">resources/noideaicon.png</file>
+        <file alias="experticon.png">resources/experticon.png</file>
+    </qresource>
+</RCC>
