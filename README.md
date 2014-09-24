@@ -9,7 +9,7 @@ However, sometimes it was just really handy if the Arduino-specific Bootloader a
 
 This is exactly what hexMerger-Utility does: combine the two files into one compliant Intel HEX file. 
 
-## How can I get this wonderful peace of Software? 
+## How can I get this wonderful piece of Software? 
 
 You can download hexMerger on this page for Windows, Mac, Linux and the source code. 
 See the 'builds' folder above to find the Application file for your corresponding OS.
@@ -24,7 +24,7 @@ Warning: this program is in its early beta stage and has not been tested thoroug
 
 ## Can I help?
 
-Definitely. If you don't know how to code, you might wan't to consider translating the software into your language.
+Definitely. If you don't know how to code, you might want to consider translating the software into your language.
 
 In case you find a bug, defect or if you have any kind of feedback, suggestion, hint, wish; please file it as an "[Issue](https://github.com/tobiasvogel/hexMerger/issues)" (even if a Wish is not literally an Issue...) here on this GitHub page.
 
