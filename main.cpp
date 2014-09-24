@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
 	topDir.cdUp();
 	topDir.cd("Resources");
     	translator.load(("hexMerger_" + locale + ".qm"), topDir.absolutePath() + QDir::separator() + "lang");
-#elif
+#else
     translator.load(("hexMerger_" + locale + ".qm"), (QApplication::applicationDirPath() + QDir::separator() + "lang"));
 #endif
     app.installTranslator(&translator);

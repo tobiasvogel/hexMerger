@@ -42,7 +42,7 @@ static const QString ArduinoBasePath = "/Contents/Resources/Java/hardware/arduin
 static const QString BoardsTxtPath = "/hardware/arduino/boards.txt";
 static const QString BootloadersPath = "/hardware/arduino/bootloaders/";
 static const QString ArduinoExecutable = "/arduino";
-static const QString ArduinoBasePath = "/hardware/arduino"/;
+static const QString ArduinoBasePath = "/hardware/arduino/";
 #endif
 
 void hexMerger::closeEvent(QCloseEvent *event) {
