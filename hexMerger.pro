@@ -23,3 +23,5 @@ OTHER_FILES += \
     resources/appicon.ico
 
 TRANSLATIONS = lang/hexMerger_de.ts
+
+CONFIG += static
