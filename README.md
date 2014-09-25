@@ -11,8 +11,8 @@ This is exactly what hexMerger-Utility does: combine the two files into one comp
 
 ## How can I get this wonderful piece of Software? 
 
-You can download hexMerger on this page for Windows, Mac, Linux and the source code. 
-See the 'builds' folder above to find the Application file for your corresponding OS.
+You can download hexMerger on [this page](https://github.com/tobiasvogel/hexMerger/releases) for Windows, Mac, Linux and the source code. 
+See the 'releases' above to find the Application file for your corresponding OS or check out the master branch for the latest development snapshot of the source code.
 
 ## For free? 
 
