@@ -209,7 +209,17 @@ QString hexMerger::parseBootloader(QString boardName) {
             bootloaderPath.replace((boardShortName + ".bootloader.path="), "");
             bootloaderFile.replace((boardShortName + ".bootloader.file="), "");
 
-            bootloaderFile = QFileInfo(boards.fileName()).absolutePath() + QDir::separator() + bootloaderPath + QDir::separator() + bootloaderFile;
+	    QString tmpBootloaderFile = QFileInfo(boards.fileName()).absolutePath() + QDir::separator() + bootloaderPath + QDir::separator() + bootloaderFile;
+	    if (QFile(tmpBootloaderFile).exists()) {
+		bootloaderFile = tmpBootloaderFile;
+	    } else {
+		tmpBootloaderFile = QFileInfo(boards.fileName()).absolutePath() + QDir::separator() + "bootloaders" + QDir::separator() + bootloaderPath + QDir::separator() + bootloaderFile;
+	    	if (QFile(tmpBootloaderFile).exists()) {
+		  bootloaderFile = tmpBootloaderFile;
+		} else {
+		  bootloaderFile = "";
+		}
+	    }
 
             return bootloaderFile;
         }
@@ -393,7 +403,7 @@ void hexMerger::mergeHex() {
 
     QFile OutputFile(outputLine->displayText());
     QFileInfo fileInfo(OutputFile);
-    if (fileInfo.isWritable() == false) {
+    if (OutputFile.exists() && fileInfo.isWritable() == false) {
             QMessageBox error(QMessageBox::Critical, "HexMerger", tr("Could not write Output-File.\nError: The File is not writable."), QMessageBox::Ok, this);
             error.exec();
             return;
