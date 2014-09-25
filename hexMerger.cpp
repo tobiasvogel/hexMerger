@@ -325,15 +325,15 @@ licenseWidget::licenseWidget() {
 
     QFont standardFont;
     standardFont.setStyleHint(QFont::TypeWriter);
-    standardFont.setPointSize(12);
+    standardFont.setPixelSize(12);
 
     QFont smallFont;
     smallFont.setStyleHint(QFont::SansSerif);
-    smallFont.setPointSize(9);
+    smallFont.setPixelSize(9);
 
     QFont boldFont;
     boldFont.setStyleHint(QFont::SansSerif);
-    boldFont.setPointSize(12);
+    boldFont.setPixelSize(12);
     boldFont.setBold(true);
 
     setFixedSize(500, 470);
@@ -489,15 +489,15 @@ hexMerger::hexMerger() {
 
     QFont standardFont;
     standardFont.setStyleHint(QFont::SansSerif);
-    standardFont.setPointSize(12);
+    standardFont.setPixelSize(12);
 
     QFont mediumFont;
     mediumFont.setStyleHint(QFont::SansSerif);
-    mediumFont.setPointSize(11);
+    mediumFont.setPixelSize(11);
 
     QFont smallFont;
     smallFont.setStyleHint(QFont::SansSerif);
-    smallFont.setPointSize(9);
+    smallFont.setPixelSize(9);
 
     setFixedSize(400,460);
 	setWindowTitle("HexMerger");
@@ -557,6 +557,7 @@ hexMerger::hexMerger() {
     buttonsGroupBox = new QGroupBox(this);
     buttonsGroupBox->setGeometry(10, 360, 380, 65);
     buttonsGroupBox->setTitle("");
+    buttonsGroupBox->setObjectName(buttonsGroupBox);
     exitButton = new QPushButton(buttonsGroupBox);
     exitButton->setFocusPolicy(Qt::StrongFocus);
     settingsButton = new QPushButton(buttonsGroupBox);
@@ -646,15 +647,15 @@ settingsWidget::settingsWidget() {
 
     QFont standardFont;
     standardFont.setStyleHint(QFont::SansSerif);
-    standardFont.setPointSize(12);
+    standardFont.setPixelSize(12);
 
     QFont mediumFont;
     mediumFont.setStyleHint(QFont::SansSerif);
-    mediumFont.setPointSize(11);
+    mediumFont.setPixelSize(11);
 
     QFont smallFont;
     smallFont.setStyleHint(QFont::SansSerif);
-    smallFont.setPointSize(9);
+    smallFont.setPixelSize(9);
 
     setFixedSize(500, 360);
     setWindowTitle(tr("Settings"));
@@ -663,6 +664,7 @@ settingsWidget::settingsWidget() {
     arduinoApplicationBox->setTitle(tr("Arduino Executable Path"));
     settingsButtonsGroupBox = new QGroupBox(this);
     settingsButtonsGroupBox->setGeometry(165, 295, 325, 50);
+    settingsButtonsGroupBox->setObjectName("settingsButtonsGroupBox");
     includePathGroupBox = new QGroupBox(this);
     includePathGroupBox->setGeometry(10, 150, 480, 125);
     includePathGroupBox->setTitle(tr("Arduino Document Path"));
@@ -921,15 +923,15 @@ void hintWidget::paintEvent(QPaintEvent *) {
 
     QFont standardFont;
     standardFont.setStyleHint(QFont::SansSerif);
-    standardFont.setPointSize(12);
+    standardFont.setPixelSize(12);
 
     QFont mediumFont;
     mediumFont.setStyleHint(QFont::SansSerif);
-    mediumFont.setPointSize(11);
+    mediumFont.setPixelSize(11);
 
     QFont smallFont;
     smallFont.setStyleHint(QFont::SansSerif);
-    smallFont.setPointSize(9);
+    smallFont.setPixelSize(9);
     QPainterPath OuterPath;
     QPainter Painter(this);
     OuterPath.setFillRule(Qt::WindingFill);
