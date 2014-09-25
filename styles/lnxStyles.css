@@ -48,3 +48,28 @@ settingsWidget QPushButton {
 settingsWidget QLineEdit {
 	font-size: 11px;
 }
+
+QMessageBox QAbstractButton {
+	padding-top: 6px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 6px;
+}
+QFileDialog QAbstractButton {
+	padding-top: 6px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 6px;
+}
+QFileDialog QComboBox {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+}
+QFileDialog QLineEdit {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+}
