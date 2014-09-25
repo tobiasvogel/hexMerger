@@ -20,7 +20,10 @@ RC_ICONS = resources/appicon.ico
 ICON = resources/appicon.icns
 
 OTHER_FILES += \
-    resources/appicon.ico
+    resources/appicon.ico \
+    styles/lnxStyles.css \
+    styles/macStyles.css \
+    styles/winStyles.css
 
 TRANSLATIONS = lang/hexMerger_de.ts
 

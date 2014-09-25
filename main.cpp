@@ -31,13 +31,31 @@ int main(int argc, char **argv) {
 	app.setApplicationName("HexMerger");
 
 #ifdef Q_OS_MAC
-	app.setStyleSheet((topDir.absolutePath() + QDir::separator() + "styles/macStyles.css"));
+    QFile css((topDir.absolutePath() + QDir::separator() + "styles/macStyles.css"));
+    if (css.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+         QTextStream cssStream(&css);
+         app.setStyleSheet(cssStream.readAll());
+         css.close();
+    }
 #endif
 #ifdef Q_OS_LINUX
-	app.setStyleSheet((QApplication::applicationDirPath() + QDir::separator() + "styles/lnxStyles.css"));
+    QFile css((QApplication::applicationDirPath() + QDir::separator() + "styles/lnxStyles.css"));
+    if (css.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+         QTextStream cssStream(&css);
+         app.setStyleSheet(cssStream.readAll());
+         css.close();
+    }
 #endif
 #ifdef Q_OS_WIN
-	app.setStyleSheet((QApplication::applicationDirPath() + QDir::separator() + "styles\\winStyles.css"));
+    QFile css((QApplication::applicationDirPath() + QDir::separator() + "styles\\winStyles.css"));
+    if (css.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+         QTextStream cssStream(&css);
+         app.setStyleSheet(cssStream.readAll());
+         css.close();
+    }
 #endif
 
 	hexMerger mainWindow;
