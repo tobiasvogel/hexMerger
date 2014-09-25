@@ -943,7 +943,15 @@ void hintWidget::paintEvent(QPaintEvent *) {
     const QRegion horizontalRectangle(60, 152, 230, 96, QRegion::Rectangle);
 
     QPolygon arcPolygon;
+#ifdef Q_OS_MAC
     arcPolygon << QPoint(60, 180) << QPoint(60, 222) << QPoint(0, 268);
+#endif
+#ifdef Q_OS_LINUX
+    arcPolygon << QPoint(60, 180) << QPoint(60, 222) << QPoint(0, 92);
+#endif
+#ifdef Q_OS_WIN
+    arcPolygon << QPoint(60, 180) << QPoint(60, 222) << QPoint(0, 268);
+#endif
 
     QRegion widgetRegion(arcPolygon);
     widgetRegion = widgetRegion.united(horizontalRectangle);
