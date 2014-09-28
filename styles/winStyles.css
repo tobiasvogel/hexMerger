@@ -1,0 +1,83 @@
+QPushButton {
+	margin-top: 5px;
+	margin-right: 3px;
+	margin-left: 4px;
+	margin-bottom: 5px;
+}
+
+QGroupBox#buttonsGroupBox {
+	margin-top: 2px;
+}
+
+QGroupBox#buttonsGroupBox QPushButton {
+	margin-right: 8px;
+	margin-left: 6px;
+}
+
+QStatusBar {
+	border-top: 1px solid #cccccc;
+}
+
+hexMerger QLineEdit {
+	font-size: 11px;
+}
+
+hexMerger QComboBox {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+settingsWidget QPushButton {
+	margin-top: 5px;
+	margin-right: 4px;
+	margin-bottom: 6px;
+	margin-left: 3px;
+}
+
+#settingsButtonsGroupBox {
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-left: 2px;
+}
+
+#settingsButtonsGroupBox QPushButton {
+	margin-left: 6px;
+	margin-right: 8px;
+}
+
+settingsWidget QLineEdit {
+	font-size: 11px;
+}
+
+QMessageBox QAbstractButton {
+	padding-top: 6px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 6px;
+}
+
+QInputDialog QAbstractButton {
+	padding-top: 6px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 6px;
+}
+
+QFileDialog QAbstractButton {
+	padding-top: 6px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 6px;
+}
+QFileDialog QComboBox {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+}
+QFileDialog QLineEdit {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+}

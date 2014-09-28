@@ -284,7 +284,6 @@ void hexMerger::boardChanged(QString boardName) {
             QMessageBox msgBox;
             msgBox.setText("HexMerger");
             msgBox.setIconPixmap(QPixmap(":/appicon.png"));
-	    msgBox.setIconSize(QSize(64, 64));
             msgBox.setInformativeText(tr("The Board selected below uses another Bootloader according to the Arduino configuration file.\n\nDo you want to change the Bootloader file accordingly?"));
             msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
             donotaskagainCB = new QCheckBox(tr("Dont ask me again"), this);
@@ -312,7 +311,6 @@ void hexMerger::about() {
     QMessageBox msgBox;
     msgBox.setText(tr("HexMerger"));
     msgBox.setIconPixmap(QPixmap(":/appicon.png"));
-    msgBox.setIconSize(QSize(128, 128));
     msgBox.setInformativeText((tr("This application is intended to merge two HEX-Files:\n\n - one compiled Arduino-Sketch\n\n - one Arduino Bootloader\n\nThis application is provided \"AS IS\", without warranty of any kind. Check out \"License\" in the \"Help\"-Menu for more information.\n\nExtra credits go to the Oxygen Icons Team from which the Icons used in this Application are taken from.\nSee %1 for more information.\n\n%2 2014 by %3. Released under the GPLv2.").arg("http://www.oxygen-icons.org/").arg("\u00A9").arg("Tobias Vogel")));
     msgBox.setStandardButtons(QMessageBox::Ok);
     msgBox.exec();
@@ -460,7 +458,6 @@ void hexMerger::mergeHex() {
 
     QMessageBox successMsg(QMessageBox::NoIcon, "HexMerger", (tr("Merging complete!\n\nPlease find your Merged HEX-File under:\n") + QFileInfo(OutputFile).absoluteFilePath()), QMessageBox::Ok, this);
     successMsg.setIconPixmap(QPixmap(":/appicon.png"));
-    successMsg.setIconSize(QSize(64, 64));
     successMsg.exec();
 }
 
@@ -560,7 +557,7 @@ hexMerger::hexMerger() {
     buttonsGroupBox = new QGroupBox(this);
     buttonsGroupBox->setGeometry(10, 360, 380, 65);
     buttonsGroupBox->setTitle("");
-    buttonsGroupBox->setObjectName(buttonsGroupBox);
+    buttonsGroupBox->setObjectName("buttonsGroupBox");
     exitButton = new QPushButton(buttonsGroupBox);
     exitButton->setFocusPolicy(Qt::StrongFocus);
     settingsButton = new QPushButton(buttonsGroupBox);
